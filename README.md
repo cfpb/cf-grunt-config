@@ -4,9 +4,10 @@ Common Grunt tasks for [Capital Framework](https://github.com/cfpb/capital-frame
 
 ## Using these tasks
 
-1. Install this package and save it as a component dependency, eitehr by running
+1. Install this package and save it as a component dependency, either by running
    `npm install --save-dev git://github.com/cfpb/cf-grunt-config.git`,
    or by manually adding it to `package.json` and then running `npm install`.
+   
    ```json
    "devDependencies": {
      ...
@@ -15,6 +16,7 @@ Common Grunt tasks for [Capital Framework](https://github.com/cfpb/capital-frame
    }
    ```
 2. Load the newly installed tasks into the Gruntfile:
+
    ```js
    grunt.loadTasks('node_modules/cf-grunt-config/tasks/');
    ```

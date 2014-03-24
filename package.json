@@ -18,5 +18,14 @@
       "type": "Public Domain",
       "url": "https://github.com/cfpb/cf-grunt-config/blob/master/TERMS.md"
     }
-  ]
+  ],
+  "devDependencies": {
+    "grunt-autoprefixer": "latest",
+    "grunt-bower-task": "~0.3.2",
+    "grunt-contrib-concat": "latest",
+    "grunt-contrib-copy": "latest",
+    "grunt-contrib-less": "~0.8.3",
+    "grunt-string-replace": "latest",
+    "grunt-topdoc": "~0.2.0"
+  }
 }

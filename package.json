@@ -1,6 +1,6 @@
 {
   "name": "cf-grunt-config",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Common Grunt tasks for Capital Framework components.",
   "keywords": ["capital-framework", "capital", "grunt", "build"],
   "author": {

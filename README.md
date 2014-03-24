@@ -1,6 +1,9 @@
 # cf-grunt-config
 
-Common Grunt tasks for [Capital Framework](https://github.com/cfpb/capital-framework) components.
+Common Grunt task configurations for [Capital Framework](https://github.com/cfpb/capital-framework) components.
+
+Thanks to [Thomas Boyt](https://github.com/thomasboyt) for the
+[inspiration](http://www.thomasboyt.com/2013/09/01/maintainable-grunt.html)!
 
 ## Using these tasks
 
@@ -22,6 +25,13 @@ Common Grunt tasks for [Capital Framework](https://github.com/cfpb/capital-frame
    ```
 3. Access the tasks as you normally would, either individually or by creating
    compound tasks in the component's Gruntfile.
+
+
+## Next steps
+
+- ~~Finish migrating the task options.~~
+- Add Grunt plugin dependencies to THIS package's `package.json`.
+- Integrate this package into each component's build process.
 
 
 ## Contributing

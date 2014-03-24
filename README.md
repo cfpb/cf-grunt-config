@@ -29,7 +29,7 @@ Thanks to [Thomas Boyt](https://github.com/thomasboyt) for the
 
 ## Next steps
 
-- Finish migrating the task options.
+- ~~Finish migrating the task options.~~
 - Add Grunt plugin dependencies to THIS package's `package.json`.
 - Integrate this package into each component's build process.
 

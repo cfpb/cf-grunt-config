@@ -18,11 +18,8 @@ Thanks to [Thomas Boyt](https://github.com/thomasboyt) for the
      ...
    }
    ```
-2. Load the newly installed tasks into the Gruntfile:
-
-   ```js
-   grunt.loadTasks('node_modules/cf-grunt-config/tasks/');
-   ```
+2. Reorganize your component's Gruntfile.
+   Use the [cf-buttons Gruntfile](https://github.com/cfpb/cf-buttons/blob/gh-pages/Gruntfile.js) for guidance.
 3. Access the tasks as you normally would, either individually or by creating
    compound tasks in the component's Gruntfile.
 

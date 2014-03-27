@@ -7,10 +7,12 @@ module.exports = {
       destination: 'demo/',
       template: 'node_modules/cf-component-demo/' + ( grunt.option('tpl') || 'raw' ) + '/',
       templateData: {
+        ltIE9AltSource: '<%= opt.ltIE9AltCSS %>',
+        ltIE8Source: '<%= opt.ltIE8CSS %>',
+        html5Shiv: true,
         family: '<%= pkg.name %>',
         title: '<%= pkg.name %> demo',
         repo: '<%= pkg.homepage %>',
-        ltIE8Source: 'static/css/main.lt-ie8.min.css',
         custom: '<%= grunt.file.read("demo/custom.html") %>'
       }
     }

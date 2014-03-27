@@ -24,6 +24,7 @@ module.exports = {
       template: 'node_modules/cf-component-demo/' + ( grunt.option('tpl') || 'code_examples' ) + '/',
       templateData: {
         family: '<%= pkg.name %>',
+        description: '<%= pkg.description %>',
         title: '<%= pkg.name %> docs',
         repo: '<%= pkg.homepage %>'
       }

@@ -28,6 +28,7 @@ Thanks to [Thomas Boyt](https://github.com/thomasboyt) for the
 
 - ~~Finish migrating the task options.~~
 - ~~Add Grunt plugin dependencies to THIS package's `package.json`.~~
+- ~~Investigate [JIT task loading](https://github.com/shootaroo/jit-grunt).~~
 - Integrate this package into each component's build process.
 
 

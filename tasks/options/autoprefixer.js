@@ -4,8 +4,8 @@ module.exports = {
     diff: false,
     map: false
   },
-  multiple_files: {
-    // Prefix all CSS files found in `src/static/css` and overwrite.
+  main: {
+    // Prefix all properties found in `main.css` and overwrite.
     expand: true,
     src: 'demo/static/css/main.css'
   },

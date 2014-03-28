@@ -2,7 +2,12 @@
   "name": "cf-grunt-config",
   "version": "0.2.0",
   "description": "Common Grunt tasks for Capital Framework components.",
-  "keywords": ["capital-framework", "capital", "grunt", "build"],
+  "keywords": [
+    "capital-framework",
+    "capital",
+    "grunt",
+    "build"
+  ],
   "author": {
     "name": "Consumer Financial Protection Bureau",
     "url": "http://cfpb.github.io/"
@@ -24,8 +29,9 @@
     "grunt-bower-task": "~0.3.2",
     "grunt-contrib-concat": "latest",
     "grunt-contrib-copy": "latest",
-    "grunt-contrib-less": "~0.8.3",
+    "grunt-contrib-less": "~0.11.0",
     "grunt-string-replace": "latest",
-    "grunt-topdoc": "~0.2.0"
+    "grunt-topdoc": "~0.2.0",
+    "grunt": "~0.4.4"
   }
 }

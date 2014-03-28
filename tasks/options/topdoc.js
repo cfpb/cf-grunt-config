@@ -7,9 +7,9 @@ module.exports = {
       destination: 'demo/',
       template: 'node_modules/cf-component-demo/' + ( grunt.option('tpl') || 'raw' ) + '/',
       templateData: {
-        ltIE9AltSource: '<%= opt.ltIE9AltCSS %>',
-        ltIE8Source: '<%= opt.ltIE8CSS %>',
-        html5Shiv: true,
+        ltIE9AltSource: '<%= opt.ltIE9AltSource %>',
+        ltIE8Source: '<%= opt.ltIE8Source %>',
+        html5Shiv: opt.html5Shiv,
         family: '<%= pkg.name %>',
         title: '<%= pkg.name %> demo',
         repo: '<%= pkg.homepage %>',

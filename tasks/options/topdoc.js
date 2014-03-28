@@ -9,7 +9,7 @@ module.exports = {
       templateData: {
         ltIE9AltSource: '<%= opt.ltIE9AltSource %>',
         ltIE8Source: '<%= opt.ltIE8Source %>',
-        html5Shiv: opt.html5Shiv,
+        html5Shiv: '<%= opt.html5Shiv >%',
         family: '<%= pkg.name %>',
         title: '<%= pkg.name %> demo',
         repo: '<%= pkg.homepage %>',

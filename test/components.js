@@ -71,7 +71,18 @@ describe('Components', function(){
         child.exec( 'npm --prefix ' + loc + ' install ' + loc, purgeModules );
 
         // Purge node modules in `cf-grunt-config`
-        function purgeModules() {
+        function purgeModules( err ) {
+
+          // If there's an error, make it a little more informative and GTFO
+          if ( err ) {
+            var component = loc.match(/components\/([\w\-_]+)/)
+                          ? loc.match(/components\/([\w\-_]+)/)[1].replace( '-gh-pages', '' )
+                          : 'an unknown component';
+            err = new Error('Running `npm install` in ' + loc + ' failed.');
+            done( err );
+            return;
+          }
+
           rimraf( path.join( loc, 'node_modules/cf-grunt-config/node_modules' ), copyPackageJSON );
         }
 
@@ -86,7 +97,18 @@ describe('Components', function(){
         }
 
         // Copy over the latest `cf-grunt-config` tasks
-        function copyTasks() {
+        function copyTasks( err ) {
+
+          // If there's an error, make it a little more informative and GTFO
+          if ( err ) {
+            var component = loc.match(/components\/([\w\-_]+)/)
+                          ? loc.match(/components\/([\w\-_]+)/)[1].replace( '-gh-pages', '' )
+                          : 'an unknown component';
+            err = new Error('Running `npm install` in ' + path.join( loc, 'node_modules/cf-grunt-config' ) + ' failed.');
+            done( err );
+            return;
+          }
+
           ncp( path.join('tasks'), path.join( loc, 'node_modules/cf-grunt-config/tasks' ), installBowerDeps );
         }
 
@@ -96,7 +118,7 @@ describe('Components', function(){
         }
 
         // Compile the component's assets using the latest `cf-grunt-config` tasks
-        function compileAssets( err, stdout, stderr ) {
+        function compileAssets( err ) {
 
           // If there's an error, make it a little more informative and GTFO
           if ( err ) {

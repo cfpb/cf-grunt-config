@@ -100,6 +100,7 @@ describe('Components', function(){
 
           // If there's an error, make it a little more informative and GTFO
           if ( err ) {
+            console.log(stdout);
             var component = loc.match(/components\/([\w\-_]+)/)
                           ? loc.match(/components\/([\w\-_]+)/)[1].replace( '-gh-pages', '' )
                           : 'an unknown component';

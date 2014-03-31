@@ -77,7 +77,7 @@ describe('Components', function(){
 
         // Copy over the latest `package.json`
         function copyPackageJSON() {
-          ncp( path.join('../package.json'), path.join( loc, 'node_modules/cf-grunt-config/package.json' ), reInstallDeps );
+          ncp( path.join('package.json'), path.join( loc, 'node_modules/cf-grunt-config/package.json' ), reInstallDeps );
         }
 
         // Re-install npm deps which may be different because of the latest `package.json`
@@ -87,7 +87,7 @@ describe('Components', function(){
 
         // Copy over the latest `cf-grunt-config` tasks
         function copyTasks() {
-          ncp( path.join('../tasks'), path.join( loc, 'node_modules/cf-grunt-config/tasks' ), installBowerDeps );
+          ncp( path.join('tasks'), path.join( loc, 'node_modules/cf-grunt-config/tasks' ), installBowerDeps );
         }
 
         // Install bower deps
@@ -100,9 +100,6 @@ describe('Components', function(){
 
           // If there's an error, make it a little more informative and GTFO
           if ( err ) {
-            console.log(err);
-            console.log(stdout);
-            console.log(stderr);
             var component = loc.match(/components\/([\w\-_]+)/)
                           ? loc.match(/components\/([\w\-_]+)/)[1].replace( '-gh-pages', '' )
                           : 'an unknown component';

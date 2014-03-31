@@ -7,10 +7,12 @@ module.exports = {
       destination: 'demo/',
       template: 'node_modules/cf-component-demo/' + ( grunt.option('tpl') || 'raw' ) + '/',
       templateData: {
+        ltIE9AltSource: '<%= opt.ltIE9AltSource %>',
+        ltIE8Source: '<%= opt.ltIE8Source %>',
+        html5Shiv: '<%= opt.html5Shiv %>',
         family: '<%= pkg.name %>',
         title: '<%= pkg.name %> demo',
         repo: '<%= pkg.homepage %>',
-        ltIE8Source: 'static/css/main.lt-ie8.min.css',
         custom: '<%= grunt.file.read("demo/custom.html") %>'
       }
     }
@@ -22,6 +24,7 @@ module.exports = {
       template: 'node_modules/cf-component-demo/' + ( grunt.option('tpl') || 'code_examples' ) + '/',
       templateData: {
         family: '<%= pkg.name %>',
+        description: '<%= pkg.description %>',
         title: '<%= pkg.name %> docs',
         repo: '<%= pkg.homepage %>'
       }

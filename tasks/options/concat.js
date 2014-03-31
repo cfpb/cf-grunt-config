@@ -3,7 +3,6 @@ module.exports = {
     src: [
       'src/*.less',
       'src/vendor/cf-*/*.less',
-      'src/vendor/font-awesome/font-awesome.css',
       '!src/vendor/cf-concat/cf.less'
     ],
     dest: 'src/vendor/cf-concat/cf.less',

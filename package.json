@@ -2,7 +2,12 @@
   "name": "cf-grunt-config",
   "version": "0.2.0",
   "description": "Common Grunt tasks for Capital Framework components.",
-  "keywords": ["capital-framework", "capital", "grunt", "build"],
+  "keywords": [
+    "capital-framework",
+    "capital",
+    "grunt",
+    "build"
+  ],
   "author": {
     "name": "Consumer Financial Protection Bureau",
     "url": "http://cfpb.github.io/"
@@ -19,13 +24,26 @@
       "url": "https://github.com/cfpb/cf-grunt-config/blob/master/TERMS.md"
     }
   ],
+  "scripts": {
+    "test": "mocha test/components.js"
+  },
   "dependencies": {
-    "grunt-autoprefixer": "latest",
-    "grunt-bower-task": "~0.3.2",
-    "grunt-contrib-concat": "latest",
-    "grunt-contrib-copy": "latest",
-    "grunt-contrib-less": "~0.8.3",
-    "grunt-string-replace": "latest",
+    "grunt-autoprefixer": "~0.7.2",
+    "grunt-bower-task": "~0.3.4",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-less": "~0.11.0",
+    "grunt-string-replace": "~0.2.7",
     "grunt-topdoc": "~0.2.0"
+  },
+  "devDependencies": {
+    "path": "~0.4.9",
+    "rimraf": "~2.2.6",
+    "fstream": "~0.1.25",
+    "ncp": "~0.5.0",
+    "unzip": "~0.1.9",
+    "request": "~2.34.0",
+    "assert": "~1.1.1",
+    "mocha": "~1.18.2"
   }
 }

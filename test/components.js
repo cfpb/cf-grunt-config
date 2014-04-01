@@ -10,7 +10,17 @@ var request = require('request'),
 describe('Components', function(){
   this.timeout( 600000 );
 
-  // Components to test that use `cf-grunt-config`
+  // As cf components are updated to use the centralized `cf-grunt-config`
+  // repository, add its zip to this array. In this test, each zip will be:
+  //   1. downloaded
+  //   2. extracted
+  //   3. have its npm and bower dependencies installed
+  //   4. have its `node_modules/cf-grunt-config` directory overwritten
+  //      with whatever is in the root of this repo (your latest updates)
+  //   5. and then built (running `grunt`)
+  // If step 5 fails, the test fails and you'll be alerted. It likely
+  // means a dependency you changed in package.json or a task you 
+  // changed/added in `tasks/options` is incompatible with a component.
   zips = [
     'https://github.com/cfpb/cf-buttons/archive/gh-pages.zip'
   ];

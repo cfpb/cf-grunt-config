@@ -24,6 +24,9 @@
       "url": "https://github.com/cfpb/cf-grunt-config/blob/master/TERMS.md"
     }
   ],
+  "scripts": {
+    "test": "mocha test/components.js"
+  },
   "dependencies": {
     "grunt-autoprefixer": "latest",
     "grunt-bower-task": "~0.3.2",
@@ -33,5 +36,15 @@
     "grunt-legacssy": "~0.3.1",
     "grunt-string-replace": "latest",
     "grunt-topdoc": "~0.2.0"
+  },
+  "devDependencies": {
+    "path": "~0.4.9",
+    "rimraf": "~2.2.6",
+    "fstream": "~0.1.25",
+    "ncp": "~0.5.0",
+    "unzip": "~0.1.9",
+    "request": "~2.34.0",
+    "assert": "~1.1.1",
+    "mocha": "~1.18.2"
   }
 }

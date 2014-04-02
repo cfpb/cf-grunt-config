@@ -4,7 +4,8 @@ module.exports = {
   main: {
     options: {
       paths: grunt.file.expand('src/vendor/**/'),
-      yuicompress: false
+      yuicompress: false,
+      sourceMap: true
     },
     files: {
       'demo/static/css/main.css': [

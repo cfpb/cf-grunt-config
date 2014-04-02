@@ -22,7 +22,9 @@ describe('Components', function(){
   // means a dependency you changed in package.json or a task you 
   // changed/added in `tasks/options` is incompatible with a component.
   zips = [
-    'https://github.com/cfpb/cf-buttons/archive/gh-pages.zip'
+    'https://github.com/cfpb/cf-buttons/archive/gh-pages.zip',
+    'https://github.com/cfpb/cf-typography/archive/gh-pages.zip',
+    'https://github.com/cfpb/cf-forms/archive/gh-pages.zip'
   ];
 
   // Kill the `components` dir so we can start fresh
@@ -35,29 +37,28 @@ describe('Components', function(){
 
   before(function( done ) {
 
-    var i = zips.length,
-        j = 0;
+    var i = 0;
 
-      zips.forEach( function getZip( location ) {
+    zips.forEach( function getZip( location ) {
 
-        var dir = fstream.Writer('test/components'),
-            r;
+      var dir = fstream.Writer('test/components'),
+          r;
 
-        // Grab the file, unzip it, and send it to the `components` dir
-        r = request( location )
-              .pipe( unzip.Parse() )
-              .pipe( dir );
+      // Grab the file, unzip it, and send it to the `components` dir
+      r = request( location )
+            .pipe( unzip.Parse() )
+            .pipe( dir );
 
-        // When the request is complete, kick off a huge chain of events
-        r.on( 'close', function setUp( err ) {
-          j++;
-          if ( i === j ) {
-            done( err );
-          }
-        });
-
+      // When the request is complete, kick off a huge chain of events
+      r.on( 'close', function setUp( err ) {
+        i++;
+        if ( i === zips.length ) {
+          console.log('\u001b[36m' + i + ' components have been downloaded. Attempting to build them now. This will take a few minutes.\u001b[0m\n');
+          done( err );
+        }
       });
 
+    });
 
   });
 

@@ -1,5 +1,7 @@
 # cf-grunt-config
 
+[![Build Status](https://travis-ci.org/cfpb/cf-grunt-config.svg)](https://travis-ci.org/cfpb/cf-grunt-config)
+
 Common Grunt task configurations for [Capital Framework](https://github.com/cfpb/capital-framework) components.
 
 Thanks to [Thomas Boyt](https://github.com/thomasboyt) for the
@@ -34,7 +36,7 @@ Thanks to [Thomas Boyt](https://github.com/thomasboyt) for the
 
 ## Contributing
 
-We welcome your feedback and contributions.
+We welcome your feedback and contributions. Run `npm test` prior to submitting a pull request to check for regressions.
 
 - [Find out about contributing](https://github.com/cfpb/cf-grunt-config/blob/master/CONTRIBUTING.md)
 - [File a bug](https://github.com/cfpb/cf-grunt-config/issues/new?body=%23%23%20URL%0D%0D%0D%23%23%20Actual%20Behavior%0D%0D%0D%23%23%20Expected%20Behavior%0D%0D%0D%23%23%20Steps%20to%20Reproduce%0D%0D%0D%23%23%20Screenshot&labels=bug)

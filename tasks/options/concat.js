@@ -2,6 +2,7 @@ module.exports = {
   main: {
     src: [
       'src/*.less',
+      'src/less/*.less',
       'src/vendor/cf-*/*.less',
       '!src/vendor/cf-concat/cf.less'
     ],

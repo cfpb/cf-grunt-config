@@ -22,7 +22,7 @@ module.exports = {
     [{
       expand: true,
       cwd: 'demo/',
-      src: ['static/css/main.css', 'static/js/component.min.js'],
+      src: ['static/css/main.css', 'static/js/*.js'],
       dest: 'docs/'
     }]
   }

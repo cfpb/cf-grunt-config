@@ -9,6 +9,7 @@ module.exports = {
       templateData: {
         ltIE9AltSource: '<%= opt.ltIE9AltSource %>',
         ltIE8Source: '<%= opt.ltIE8Source %>',
+        ie8FontFaceHack: '<%= opt.ie8FontFaceHack %>',
         html5Shiv: '<%= opt.html5Shiv %>',
         jsBody: '<%= opt.jsBody %>',
         family: '<%= pkg.name %>',

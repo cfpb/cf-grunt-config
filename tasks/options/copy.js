@@ -4,7 +4,7 @@ module.exports = {
     [{
       expand: true,
       cwd: 'src/',
-      src: ['fonts/**'],
+      src: ['img/**', 'fonts/**'],
       dest: 'demo/static/'
     }]
   },
@@ -22,7 +22,7 @@ module.exports = {
     [{
       expand: true,
       cwd: 'demo/',
-      src: ['static/css/main.css'],
+      src: ['static/css/main.css', 'static/js/component.min.js'],
       dest: 'docs/'
     }]
   }

@@ -10,7 +10,7 @@
  *                   $$
  *                   $$
  *                   ""
- *  <%= pkg.name %> - v<%= pkg.version %> - <%= grunt.template.today("yyyy-mm-dd") %>
+ *  <%= pkg.name %> - v<%= pkg.version %>
  *  <%= pkg.homepage %>
  *  A public domain work of the <%= pkg.author.name %>
  */

@@ -12,5 +12,5 @@
  *                   ""
  *  <%= pkg.name %> - v<%= pkg.version %>
  *  <%= pkg.homepage %>
- *  A public domain work of the <%= pkg.author.name %>
+ *  A public domain work of the Consumer Financial Protection Bureau
  */

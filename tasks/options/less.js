@@ -3,7 +3,7 @@ var grunt = require('grunt');
 module.exports = {
   main: {
     options: {
-      paths: grunt.file.expand('src/vendor/**/'),
+      paths: grunt.file.expand('src/**'),
       sourceMap: true
     },
     files: {

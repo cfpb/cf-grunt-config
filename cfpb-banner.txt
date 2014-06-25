@@ -1,15 +1,15 @@
 /*!
- *              ad$$             $$
- *             d$"               $$
- *             $$                $$
- *   ,adPYba,  $$$$$ $b,dPYba,   $$,dPYba,
- *  aP'    '$: $$    $$P'   '$a  $$P'   '$a
- *  $(         $$    $$(     )$  $$(     )$
- *  "b,    ,$: $$    $$b,   ,$"  $$b,   ,$"
- *   `"Ybd$"'  $$    $$`YbdP"'   $$`Ybd$"'
- *                   $$
- *                   $$
- *                   ""
+ *               ad$$              $$
+ *              d$"                $$
+ *              $$                 $$
+ *   ,adPYba,   $$$$$  $b,dPYba,   $$,dPYba,
+ *  aP'    '$:  $$     $$P'   '$a  $$P'   '$a
+ *  $(          $$     $$(     )$  $$(     )$
+ *  "b,    ,$:  $$     $$b,   ,$"  $$b,   ,$"
+ *   `"Ybd$"'   $$     $$`YbdP"'   $$`Ybd$"'
+ *                     $$
+ *                     $$
+ *                     ""
  *  <%= pkg.name %> - v<%= pkg.version %>
  *  <%= pkg.homepage %>
  *  A public domain work of the Consumer Financial Protection Bureau

@@ -23,7 +23,7 @@ module.exports = {
     options: {
       source: 'docs/static/css/',
       destination: 'docs/',
-      template: 'node_modules/cf-component-demo/' + ( grunt.option('tpl') || 'code_examples' ) + '/',
+      template: 'node_modules/cf-component-demo/' + ( grunt.option('tpl') || 'docs' ) + '/',
       templateData: {
         jsBody: '<%= opt.jsBody %>',
         family: '<%= pkg.name %>',

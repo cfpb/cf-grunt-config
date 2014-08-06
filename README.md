@@ -2,10 +2,12 @@
 
 [![Build Status](https://travis-ci.org/cfpb/cf-grunt-config.svg)](https://travis-ci.org/cfpb/cf-grunt-config)
 
-Common Grunt task configurations for [Capital Framework](https://github.com/cfpb/capital-framework) components.
+Common Grunt task configurations for
+[Capital Framework](https://github.com/cfpb/capital-framework) components.
 
 Thanks to [Thomas Boyt](https://github.com/thomasboyt) for the
 [inspiration](http://www.thomasboyt.com/2013/09/01/maintainable-grunt.html)!
+
 
 ## Using these tasks
 

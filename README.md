@@ -4,12 +4,18 @@
 
 Common Grunt task configurations for
 [Capital Framework](https://github.com/cfpb/capital-framework) components.
+Capital Framework is a front end framework developed at the
+[Consumer Financial Protection Bureau](https://cfpb.github.io/).
 
-Thanks to [Thomas Boyt](https://github.com/thomasboyt) for the
-[inspiration](http://www.thomasboyt.com/2013/09/01/maintainable-grunt.html)!
+The current version number can be found in [package.json](package.json#L3)
+and follows [Semantic Versioning 2.0](http://semver.org/).
+Release notes are recorded in the [CHANGELOG](CHANGELOG.md).
+
+If you're new to Capital Framework, we encourage you to
+[start here](https://cfpb.github.io/capital-framework/).
 
 
-## Using these tasks
+## How to use these tasks
 
 1. Install this package and save it as a component dependency, either by running
    `npm install --save-dev git://github.com/cfpb/cf-grunt-config.git`,
@@ -28,17 +34,26 @@ Thanks to [Thomas Boyt](https://github.com/thomasboyt) for the
    compound tasks in the component's Gruntfile.
 
 
-## Next steps
+## Getting involved
 
-- ~~Finish migrating the task options.~~
-- ~~Add Grunt plugin dependencies to THIS package's `package.json`.~~
-- ~~Investigate [JIT task loading](https://github.com/shootaroo/jit-grunt).~~
-- Integrate this package into each component's build process.
+We welcome your feedback and contributions. Run `npm test` prior to submitting a
+pull request to check for regressions.
+
+- [Find out about contributing](CONTRIBUTING.md)
+- File a bug using this [handy template](https://github.com/cfpb/cf-grunt-config/issues/new?body=%23%23%20URL%0D%0D%0D%23%23%20Actual%20Behavior%0D%0D%0D%23%23%20Expected%20Behavior%0D%0D%0D%23%23%20Steps%20to%20Reproduce%0D%0D%0D%23%23%20Screenshot&labels=bug)
 
 
-## Contributing
+---
 
-We welcome your feedback and contributions. Run `npm test` prior to submitting a pull request to check for regressions.
+## Open source licensing info
+1. [TERMS](TERMS.md)
+2. [LICENSE](LICENSE)
+3. [CFPB Source Code Policy](https://github.com/cfpb/source-code-policy/)
 
-- [Find out about contributing](https://github.com/cfpb/cf-grunt-config/blob/master/CONTRIBUTING.md)
-- [File a bug](https://github.com/cfpb/cf-grunt-config/issues/new?body=%23%23%20URL%0D%0D%0D%23%23%20Actual%20Behavior%0D%0D%0D%23%23%20Expected%20Behavior%0D%0D%0D%23%23%20Steps%20to%20Reproduce%0D%0D%0D%23%23%20Screenshot&labels=bug)
+
+---
+
+## Credits and references
+
+Thanks to [Thomas Boyt](https://github.com/thomasboyt) for the
+[inspiration](http://www.thomasboyt.com/2013/09/01/maintainable-grunt.html)!

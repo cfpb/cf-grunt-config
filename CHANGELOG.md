@@ -15,4 +15,5 @@ We follow the [Semantic Versioning 2.0.0](http://semver.org/) format.
 - Nothing.
 
 ### Fixed
-- Nothing.
+- Sourcemaps, but they still only work for local testing since we aren't
+  committing vendor files.

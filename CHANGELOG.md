@@ -6,6 +6,7 @@ We follow the [Semantic Versioning 2.0.0](http://semver.org/) format.
 
 ### Added
 - Added support for cf-core.
+- Updated open source docs.
 
 ### Deprecated
 - Nothing.

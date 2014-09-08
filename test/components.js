@@ -23,12 +23,12 @@ describe('Components', function(){
   // changed/added in `tasks/options` is incompatible with a component.
   zips = [
     'https://github.com/cfpb/cf-buttons/archive/gh-pages.zip',
+    'https://github.com/cfpb/cf-core/archive/gh-pages.zip',
     'https://github.com/cfpb/cf-expandables/archive/gh-pages.zip',
     'https://github.com/cfpb/cf-forms/archive/gh-pages.zip',
     'https://github.com/cfpb/cf-grid/archive/gh-pages.zip',
     'https://github.com/cfpb/cf-icons/archive/gh-pages.zip',
-    'https://github.com/cfpb/cf-pagination/archive/gh-pages.zip',
-    'https://github.com/cfpb/cf-typography/archive/gh-pages.zip'
+    'https://github.com/cfpb/cf-pagination/archive/gh-pages.zip'
   ];
 
   // Kill the `components` dir so we can start fresh

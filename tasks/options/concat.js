@@ -4,6 +4,8 @@ module.exports = {
       'src/*.less',
       'src/less/*.less',
       'src/vendor/cf-*/*.less',
+      '!src/vendor/cf-core/*.less',
+      'src/vendor/cf-core/cf-core.less',
       '!src/vendor/cf-concat/cf.less'
     ],
     dest: 'src/vendor/cf-concat/cf.less',

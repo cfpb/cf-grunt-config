@@ -4,7 +4,6 @@
 
 Common Grunt task configurations for
 [Capital Framework](https://github.com/cfpb/capital-framework) components.
-
 Capital Framework is a front end framework developed at the
 [Consumer Financial Protection Bureau](https://cfpb.github.io/).
 

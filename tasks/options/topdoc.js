@@ -11,6 +11,7 @@ module.exports = {
         ltIE8Source: '<%= opt.ltIE8Source %>',
         ie8FontFaceHack: '<%= opt.ie8FontFaceHack %>',
         html5Shiv: '<%= opt.html5Shiv %>',
+        modernizr: '<%= opt.modernizr %>',
         jsBody: '<%= opt.jsBody %>',
         family: '<%= pkg.name %>',
         title: '<%= pkg.name %> demo',
@@ -25,6 +26,7 @@ module.exports = {
       destination: 'docs/',
       template: 'node_modules/cf-component-demo/' + ( grunt.option('tpl') || 'docs' ) + '/',
       templateData: {
+        modernizr: '<%= opt.modernizr %>',
         jsBody: '<%= opt.jsBody %>',
         family: '<%= pkg.name %>',
         description: '<%= pkg.description %>',

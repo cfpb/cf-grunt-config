@@ -4,13 +4,11 @@ module.exports = {
   main: {
     options: {
       paths: grunt.file.expand('src/**'),
-      sourceMap: true
+      sourceMap: true,
+      sourceMapRootpath: '/'
     },
     files: {
       'demo/static/css/main.css': [
-        'src/vendor/normalize-css/normalize.css',
-        'src/vendor/normalize-legacy-addon/normalize-legacy-addon.css',
-        'src/vendor/font-awesome/font-awesome.css',
         'src/vendor/cf-concat/cf.less'
       ]
     }

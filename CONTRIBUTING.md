@@ -30,3 +30,6 @@ tests that validate implemented features and the presence or lack of defects.
 Additionally, the code should follow any stylistic and architectural guidelines 
 prescribed by the project. In the absence of such guidelines, mimic the styles
 and patterns in the existing code-base.
+
+For Capital Framework-specific contributing guidelines please visit
+<https://cfpb.github.io/capital-framework/contributing/>.

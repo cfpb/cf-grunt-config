@@ -9,7 +9,7 @@ module.exports = {
     },
     files: {
       'demo/static/css/main.css': [
-        'src/vendor/cf-concat/cf.less'
+        'src/cf-*.less'
       ]
     }
   }

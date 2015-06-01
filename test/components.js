@@ -129,7 +129,7 @@ describe('Components', function(){
 
         // Install bower deps
         function installBowerDeps( err ) {
-          child.exec( 'grunt vendor --gruntfile ' + loc + '/Gruntfile.js', compileAssets );
+          child.exec( 'bower install', {cwd: loc}, compileAssets );
         }
 
         // Compile the component's assets using the latest `cf-grunt-config` tasks

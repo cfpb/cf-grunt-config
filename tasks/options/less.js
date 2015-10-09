@@ -5,7 +5,10 @@ module.exports = {
     options: {
       paths: grunt.file.expand('src/vendor/**'),
       sourceMap: true,
-      sourceMapRootpath: '/'
+      sourceMapRootpath: '/',
+      modifyVars: {
+        baseurl: '',
+      }
     },
     files: {
       'demo/static/css/main.css': [

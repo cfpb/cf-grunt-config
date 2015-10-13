@@ -8,6 +8,7 @@ module.exports = {
       sourceMapRootpath: '/',
       modifyVars: {
         baseurl: '',
+        'cf-icon-path': '../'
       }
     },
     files: {

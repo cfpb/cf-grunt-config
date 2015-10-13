@@ -8,7 +8,7 @@ module.exports = {
       sourceMapRootpath: '/',
       modifyVars: {
         baseurl: '',
-        'cf-icon-path': '../'
+        'cf-icon-path': '\'../fonts\''
       }
     },
     files: {

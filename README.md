@@ -1,5 +1,7 @@
 # cf-grunt-config
 
+⚠️ **This project has been deprecated** ⚠️
+
 [![Build Status](https://travis-ci.org/cfpb/cf-grunt-config.svg)](https://travis-ci.org/cfpb/cf-grunt-config)
 
 Common Grunt task configurations for
@@ -20,7 +22,7 @@ If you're new to Capital Framework, we encourage you to
 1. Install this package and save it as a component dependency, either by running
    `npm install --save-dev git://github.com/cfpb/cf-grunt-config.git`,
    or by manually adding it to `package.json` and then running `npm install`.
-   
+
    ```json
    "devDependencies": {
      ...
